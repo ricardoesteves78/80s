@@ -6,6 +6,8 @@
     background: linear-gradient(150deg,rgba(0, 157, 255, 0.8),rgba(206, 0, 255, 0.7));
     min-height: 90vh;
 
+    transition: all 4s;
+
     &__theme-video {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
@@ -13,7 +15,45 @@
 
         padding: 3.5rem;
 
-        background: linear-gradient(to bottom right, var(--color-blue-dark-opac), var(--color-blue-light-opac));
+        background-image: linear-gradient(to bottom right, var(--color-blue-dark-opac), var(--color-blue-light-opac)), url(/img/VHS.jpg);
+        background-size: cover;
+        background-position: center;
+
+        transition: all .2s;
+        position: relative;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            width:0;
+            height:0;
+            bottom: -1px;
+            right: -1px;
+            border-bottom:5px solid transparent;
+            border-right:5px solid transparent;
+            //transition: all .8s;
+        }
+
+        &:hover {
+
+            grid-column: 1 / 3;
+            //border: 5px solid var(--color-blue-light);
+            //box-shadow: 0 2rem 4rem var(--color-blue-light-opac);
+            transform: scaleX(1.2);
+            padding: 5.5rem;
+            //transition: all .4s;
+
+            &::before {
+                width: 100%;
+                height: 100%;
+                border-bottom: 5px solid var(--color-blue-light);
+                border-right: 5px solid var(--color-blue-light);
+            }
+
+            & ~ header {
+                transform: translateX(20rem);
+            }
+        }
     }
 
     &__theme-toys {
@@ -24,6 +64,10 @@
         padding: 3.5rem;
 
         background: linear-gradient(to bottom left, var(--color-red-dark-opac), var(--color-red-light-opac));
+
+        &:hover {
+            grid-column: 3 / 5;
+        }
     }
 
     &__theme-music {
@@ -34,6 +78,10 @@
         padding: 3.5rem;
 
         background: linear-gradient(to top right, var(--color-green-dark-opac), var(--color-green-light-opac));
+
+        &:hover {
+            grid-column: 1 / 3;
+        }
     }
 
     &__theme-misc {
@@ -44,6 +92,10 @@
         padding: 3.5rem;
 
         background: linear-gradient(to top left, var(--color-orange-dark-opac), var(--color-orange-light-opac));
+
+        &:hover {
+            grid-column: 3 / 5;
+        }
     }
 
     header {
@@ -54,5 +106,11 @@
         align-items: center;
 
         padding: 3.5rem;
+
+        transition: all .4s;
     }
+}
+
+.helper {
+    transition: all 2s;
 }
