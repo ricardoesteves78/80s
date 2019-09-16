@@ -13,15 +13,7 @@
 
         padding: 3.5rem;
 
-        
-    }
-
-    &__theme-music {
-        grid-column: 1 / 2;
-        grid-row: 3 / 5;
-        align-items: center;
-
-        padding: 3.5rem;
+        background: linear-gradient(to bottom right, var(--color-blue-dark-opac), var(--color-blue-light-opac));
     }
 
     &__theme-toys {
@@ -30,6 +22,18 @@
         align-items: center;
 
         padding: 3.5rem;
+
+        background: linear-gradient(to bottom left, var(--color-red-dark-opac), var(--color-red-light-opac));
+    }
+
+    &__theme-music {
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+        align-items: center;
+
+        padding: 3.5rem;
+
+        background: linear-gradient(to top right, var(--color-green-dark-opac), var(--color-green-light-opac));
     }
 
     &__theme-misc {
@@ -38,6 +42,8 @@
         align-items: center;
 
         padding: 3.5rem;
+
+        background: linear-gradient(to top left, var(--color-orange-dark-opac), var(--color-orange-light-opac));
     }
 
     header {

@@ -1,27 +1,36 @@
 :root {
     --color-primary: rgb(73, 8, 62);
+    /*--color-secondary: ;*/
     
     --color-green: #21A10C;
     --color-green-light: #1AC000;
+    --color-green-light-opac: rgba(26, 192, 0, 0.7);
     --color-green-ligher: #1DD400;
     --color-green-dark: #317E25;
+    --color-green-dark-opac: rgba(49, 126, 37, 0.7);
     --color-green-darker: #2E452B;
 
     --color-blue: #163982;
     --color-blue-light: #09389B;
+    --color-blue-light-opac: rgba(9, 55, 155, 0.7);
     --color-blue-lighter: #0238AD;
     --color-blue-dark: #253A65;
+    --color-blue-dark-opac: rgba(37, 58, 101, 0.7);
     --color-blue-darker: #252B38;
 
     --color-red: #BD0F1B;
     --color-red-light: #E20011;
+    --color-red-light-opac: rgba(226, 0, 19, 0.7);
     --color-red-lighter: #F90012;
     --color-red-dark: #942C34;
+    --color-red-dark-opac: rgba(148, 44, 53, 0.7);
     --color-red-darker: #523235;
 
     --color-orange: #C2860F;
     --color-orange-light: #E89900;
+    --color-orange-light-opac: rgba(232, 155, 0, 0.7);
     --color-orange-lighter: #FFA900;
     --color-orange-dark: #98742D;
+    --color-orange-dark-opac: rgba(152, 116, 45, 0.7);
     --color-orange-darker: #544934;
 }
